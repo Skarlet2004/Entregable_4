@@ -1,0 +1,201 @@
+/* Estilo global: Resetea márgenes y paddings por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el body: Define fondo, color de texto y fuente general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C49A6C; /* Color de fondo claro */
+    color: #160000; /* Color de texto principal */
+    line-height: 1.6; /* Espaciado entre líneas */
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header: Estilo para el encabezado de la página */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800020; /* Color para el fondo */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar contenido */
+    
+}
+
+/* Logo dentro del header */
+header .logo img {
+    max-width: 100px; /* Tamaño máximo para el logo */
+    height: auto; /* Mantener proporciones */
+    border-radius: 5px;
+}
+
+/* Navegación dentro del header */
+header nav {
+ 
+    margin-left: 15px; /* Agrega espacio entre los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333; /* Color de los enlaces */
+    font-size: 1rem; /* Tamaño de los enlaces */
+}
+
+header nav a {
+    color: white; /* Enlaces en blanco */
+    text-decoration: underline; /* Subrayado */
+    margin: 0 10px; /* Espaciado entre enlaces */
+    font-weight: bold; /* Texto en negrita */
+}
+
+header nav a:hover {
+    color: #cb6060; /* Cambia el color al pasar el ratón por encima */
+    text-decoration: solid; /* Subrayado al pasar el mouse */
+}
+
+/* Contenedor general para secciones principales */
+.container1, .container2, .container3, .container4, .container5, .container6 {
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Espaciado externo y centrado */
+    max-width: 1200px; /* Ancho máximo */
+    background-color: white; /* Fondo blanco para contraste */
+    border-radius: 5px; /* Bordes redondeados */
+    border: dashed 3px #800020;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+.container1 h1, h2{
+    text-align: center; /* Centrar texto */
+    text-decoration-line:underline;
+}
+
+/* Estilo para las imágenes de las secciones */
+.container2 img {
+    width: 100%; /* Imagen ocupa el ancho del contenedor */
+    max-width: 200px; /* Tamaño máximo */
+    margin: 10px; /* Separación entre imágenes */
+    border: dotted 5px black;
+    border-radius: 5px; /* Bordes redondeados */
+}
+.zoom {
+    width: 300px; /* Tamaño inicial de la imagen */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.zoom:hover {
+    transform: scale(1.5); /* Aumenta el tamaño de la imagen al 150% */
+}
+
+.container4, .container3 {
+    display: flex; /* Activa el modelo de flexbox */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Alinea el texto dentro de los elementos al centro */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Centra el contenedor en la página */
+}
+
+/* Listas de pasatiempos y pendientes */
+ul, ol {
+    margin: 10px 0; /* Separación superior e inferior */
+    padding-left: 20px; /* Sangría para la lista */
+    
+}
+ul {
+    list-style-type: none; /* Elimina los puntos predeterminados */
+    padding-left: 0;
+}
+
+ul li, ol li {
+    margin-bottom: 5px; /* Separación entre ítems */
+}
+
+/* Tabla del itinerario */
+table {
+    width: 100%; /* Tabla ocupa todo el ancho disponible */
+    border-collapse: collapse; /* Elimina bordes dobles entre celdas */
+    margin-top: 10px; /* Separación superior */
+    border-radius: 15px;
+}
+
+th, td {
+
+    border: 8px solid #262e82be; /* Bordes finos entre celdas */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+th {
+    background-color: #1A237E; /* Fondo para encabezados */
+    color: rgb(255, 255, 255); /* Texto blanco */
+}
+
+/* Formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column; /* Organiza elementos verticalmente */
+    gap: 5px; /* Aumenta el espacio entre los elementos */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    border: 2px solid #ddd; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Ocupa el 100% del contenedor */
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el formulario en la página */
+}
+
+/* Inputs del formulario */
+form input[type="text"], form input[type="email"] {
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    font-size: 1rem; /* Tamaño de la fuente */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+}
+
+/* Estilo para el botón de enviar */
+form input[type="submit"] {
+    background-color: #d32f2f65; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 12px; /* Espaciado interno */
+    border:6px dotted #D32F2F ; /* Bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+/* Cambio de color al pasar el ratón por el botón */
+form input[type="submit"]:hover {
+    background-color: #501111; /* Cambio de color verde más oscuro */
+}
+
+form label {
+    font-size: 1rem; /* Tamaño de fuente para los labels */
+    font-weight: bold; /* Texto en negrita */
+    color:  #D32F2F; /* Color de texto oscuro */
+    margin-bottom: 3px; /* Reduce el espacio entre label y input */
+}
+/* Footer */
+footer {
+    background-color: #800020; /* Fondo  */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrar texto */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 20px; /* Separación superior */
+}
+
+
